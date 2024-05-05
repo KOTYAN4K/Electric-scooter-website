@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/buy.css">
+	<title>Покупка абонемента</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<section class="container">
+				<ul class="menu">
+					<li><a href="https://vk.com/public170182121">FAQ</a></li>
+					<li><a href="landingpage.html#abonementy">Абонементы</a></li>
+					<li class="logo"><a href="landingpage.html" id="logo"><img src="img/Logo.svg" alt="Logo"></a></li>
+					<li><a href="team_page.html">Команда</a></li>
+					<li><a href="https://vk.com/public170182121">Отзывы</a></li>
+				</ul>
+			</section>
+		</nav>
+		
+	</header>
+
+	<main>
+		<section class="container buy_table">
+			<h1>Покупка</h1>
+			<div class="discription">
+				<div class="abonement_discript">
+					<h2>Основной абонемент</h2>
+					<p>Возьмите самокат, и вперёд! Катайтесь столько, сколько нужно! Если вам надоело, то просто верните самокат, и вернитесь в другой день!</p>
+					<div class="prices">
+						<p class="price old_price">5999₽</p>
+						<p class="price new_price">4999₽</p>
+					</div>
+				</div>
+				<video autoplay="autoplay" loop="loop" src="video/buy_video.mp4" muted autoplay="autoplay" ><source ></video>
+			</div>
+
+			<div class="discription">
+				<div>
+					<form name="buyForm" action="">
+						<div class="main-full-in">
+							<div class="textarea">
+								<textarea name="" id="" cols="30" rows="10" readonly="readonly">После оплаты месячного абонемента, вам придёт письмо на почту, где будет находится ваш уникальный код доступа. Покажите его арендатору, и он дас вам прокатиться. Приятного использования!</textarea>
+							</div>
+							<div>
+								<label>Имя:<input maxlength="10" type="text" required="required"></label>
+								<label>Фамилия:<input maxlength="10" required="required" type="text"></label>
+								<label>Отчество:<input maxlength="10" required="required" type="text"></label>
+								<label>Дата рождения:<input required="required" type="date"></label>
+							</div>
+							<div>
+								<label>E-mail:<input required="required" type="email"></label>
+								<label>Логин:<input maxlength="10" required="required" type="text"></label>
+								<label>Пароль:<input maxlength="10" required="required" type="password"></label>
+								<label>Способ оплаты:
+									<select required="required">
+										<option value="1">СберБанк</option>
+										<option value="2">АккБарс</option>
+										<option value="3">Тинькофф</option>
+										<option value="4">Qiwi</option>
+									</select>
+								</label>
+							</div>
+						</div>
+						<div class="checkes">
+							<input id="license" required="required" type="checkbox"><label for="license">Подтверждаю лицензионное соглашение</label>
+							<input id="using" required="required" type="checkbox"><label for="using">Подтверждаю условия пользования</label>
+						</div>
+						<button type="submit" class="btn btn_black">Купить</button>
+					</form>
+				</div>
+			</div>	
+		</section>
+	</main>
+
+	<footer>
+		<section class="container">
+		<div class="help">
+			<ul>
+				<li>Возникли проблемы?</li>
+				<li>К нам в команду</li>
+				<li>Купить абонемент</li>
+			</ul>
+		</div>
+
+		<div class="logoAndCopy">
+			<img src="img/logo2.svg" alt="">
+			<p>Copyright ©2022 Прокат электросамокатов KICK. Все права защищены.</p>
+		</div>
+			
+		<div class="contacts">
+			<p>Следите за нами:</p>
+			<ul class="social">
+				<li class="vk">ВКонтакте</li>
+				<li class="youtube">Ютубе</li>
+				<li class="telega">Телеграм</li>
+				<li class="mail">Почта</li>
+			</ul>
+			<p class="phone">+79534517887</p>
+		</div>
+		</section>
+	</footer>
+</body>
+</html>		

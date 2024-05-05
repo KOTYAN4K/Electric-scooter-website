@@ -1,0 +1,158 @@
+.grid{
+	width: 846px;
+	min-height: 412px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.peoples h1{
+	text-align: center;
+	font-weight: bold;
+	font-size: 48px;
+	margin: 10px 0px 57px 0px;
+}
+
+.worker{
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	height: 196px;
+	width: 196px;
+	border-radius: 30px;
+}
+
+.worker img{
+	 display: block;
+	 position: relative;
+	 max-width:100%;
+	 height:auto;
+	 display: block;
+}
+
+.worker div{
+	 width: 100%;
+	 position: absolute;
+	 overflow: hidden;
+	 top: 0;
+	 left: 0;
+	 padding: 40% 0px;
+	 text-align: center;
+	 opacity: 0;
+	 background-color: rgba(0, 0, 0, 0.35);
+	 transition: all 0.4s ease-in-out;
+	 color: #fff;
+}
+.worker img{
+ 	transition: all 0.2s linear;
+}
+.worker:hover img{
+ 	transform: scale(1.3);
+}
+
+.worker:hover div{
+ 	opacity: 1;
+}
+
+.form{
+	margin: 50px auto;
+	background: #FFE643;
+	border-radius: 30px;
+	min-height: 516px;
+}
+
+.form h2{
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	padding-top: 45px;
+}
+
+form{
+	width: 510px;
+	margin: 0 auto;
+}
+
+form input{
+	width: 223px;
+	height: 30px;
+	border:none;
+	border-radius: 30px;
+	padding: 0px 10px;
+	font-size: 16px;
+}
+
+form ul{
+	padding-top: 18px;
+	display: flex;
+	justify-content: space-between;
+}
+
+form ul li{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 223px;
+	height: 124px;
+}
+
+form label{
+	font-size: 18px;
+}
+
+.textarea{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 26px; 
+}
+
+form textarea{
+	width: 510px;
+	height: 108px;
+	border: none;
+	border-radius: 15px;
+	font-size: 16px;
+	padding: 10px;
+	margin-bottom: 30px;
+	resize: none;
+}
+
+@media(max-width: 1000px){
+	.grid{
+		width: 500px;
+		padding-bottom: 10px;
+	}
+	.worker{
+		margin-bottom: 25px;
+	}
+}
+@media(max-width: 700px){
+	.grid{
+		width: 196px;
+		flex-direction: column;
+	}
+	form{
+		width: 300px;
+		margin: 0 auto;
+		padding-bottom: 30px;
+		text-align: center;
+	}
+	form ul{
+		flex-direction: column;
+		align-items: center;
+	}
+	form ul li{
+		margin-bottom: 20px;
+	}
+	form textarea{
+		width: 196px;
+		height: 300px;
+		margin: 20px 40px;
+	}
+	form input{
+		margin-left: -10px;
+	}
+}
